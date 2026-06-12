@@ -1,3 +1,4 @@
+/*--- DEFAULT OPTIONS ---*/
 :root {
     --blanc : #FFFFFF;
     --indigo-clair : #E0DDEC;
@@ -16,6 +17,55 @@ body {
     overflow-x: hidden;
 }
 
+    h1 {
+        font-family: Tomorrow;
+        font-weight: 800;
+        
+    }
+
+    h2 {
+        font-family: Tomorrow;
+        font-weight: 700;
+        
+    }
+
+    button, a, p {
+        font-family: Trispace;
+        font-size: 16px;
+    }
+
+    a {
+        text-decoration-line: none;
+        color: var(--indigo-noir);
+        transition: 0.2s;
+    }
+
+    a:hover {
+        font-size: 17px;
+    }
+
+    a:active {
+        font-size: 16px;
+        color: var(--indigo-fonce)
+    }
+
+    button {
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: var(--indigo);
+        transition: 0.2s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    button:active {
+        background-color: var(--indigo-fonce);
+        transform: scale(1.0);
+    }
+
 /*--- LOADING SECTION ---*/
 #loading {
     position: fixed;
@@ -29,7 +79,6 @@ body {
     align-items: center;
     background-color: var(--indigo-noir);
     color: var(--blanc);
-    font-family: Tomorrow;
     font-weight: bold;
 }
 
