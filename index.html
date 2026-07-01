@@ -10,14 +10,92 @@
 <body>
     <!-- En-tête de la page -->
     <header>
-        <h1>Ceci est un h1</h1>
+        <div id="star-deco-desktop"><img src="img/Deco.png" alt="Décoration d'étoiles"></div>
+        <h1 id="title-h1"><span id="small-h1">BIENVENUE SUR MON</span><br> PORTFOLIO</h1>
+        <div id="nav">
+            <a href="index.html"><img src="img/favicon.ico" alt="Logo portfolio"></a>
+            <a class="btn-nav" href="propos.html">A PROPOS DE MOI</a>
+            <a class="btn-nav" href="contacts.html">ME CONTACTER</a>
+        </div>
     </header>
     <!-- Section principale de la page -->
     <main>
-        <h2>Ceci est un h2</h2>
-        <a href="#">Ceci est un lien</a><br>
-        <button>Ceci est un bouton</button>
+        <section id="section-who" class="hidden">
+                <h2 class="section-title"><img src="img/etoile-1.png" alt="Décoration étoile">Qui suis-je ?</h2>
+                <img id="photo-index" class="light" src="img/photo-index.jpg" alt="Photo Océane Groux">
+                <p>Je me présente, Océane Groux, et je suis actuellement étudiante au BUT MMI de Toulon, bientôt en 3ème année. Ce que j'aime c'est dessiner, animer (2D / 3D), créer des histoires, faire du motion design ou bien du montage vidéo !</p>
+                <div>
+                    <div id="btn-portfolio-pro" class="light"><img id="top-star" src="img/etoile-1.png" alt="Décoration étoile"><a href="portfolio-pro.html">PORTFOLIO <br><span>PROFESSIONNEL</span></a></div>
+                    <div id="btn-portfolio-ac" class="light"><img id="bottom-star" src="img/etoile-1.png" alt="Décoration étoile"><a href="portfolio-ac.html">PORTFOLIO <br><span>ACADEMIQUE</span></a></div>
+                </div>
+        </section>
+
+        <section id="section-school">
+                <h2 class="section-title hidden"><img src="img/etoile-1.png" alt="Décoration étoile">Mon parcours</h2>
+                <div class="block-school light hidden left-school">
+                    <div class="img-school">
+                        <img src="img/lycee.jpg" class="light" alt="Lycée Costebelle">
+                        <h3>Lycée Costebelle</h3>
+                        <p>2020-2023</p>
+                    </div>
+                    <p>J’ai passé mon année de lycée à Costebelle. Ici, j’ai choisi les options SVT (Science de la Vie et de la Terre) et Mathématiques, je m’orientais vers un BAC scientifique. Honnêtement à cette époque j’hésitais entre devenir soigneuse animalière et animatrice 2D. C’est durant ces années que je me suis posée beaucoup de questions pour mon avenir. Par peur de perdre ma passion pour l’art, j’ai optée pour le choix de soigneuse animalière. Ceci dit, je gardais l’option Art Plastique.</p>
+                </div>
+                <div class="block-school light hidden right-school">
+                    <p>J’arrivais alors à l’université de Toulon à la Garde. J’ai décidé de suivre alors une formation pour une licence en biologie sur 3 ans. Au fil de l’année, j’avais certes de bonnes notes, mais petit à petit je me rendais compte que ce n’est pas vraiment ce que j’aimais. Ceci dit, j’ai tout de même appris à être plus responsable et autonome. A la fin de l’année, je me suis alors réorientée après les conseils de la directrice.</p>
+                    <div class="img-school">
+                        <img src="img/biologie.jpg" class="light" alt="Licence en biologie">
+                        <h3>IUT de Toulon (Biologie)</h3>
+                        <p>2023-2024</p>
+                    </div>                    
+                </div>
+                <div class="block-school light hidden left-school">
+                    <div class="img-school">
+                        <img src="img/ps_hybride.jpg" class="light" alt="BUT MMI">
+                        <h3>IUT de Toulon (MMI)</h3>
+                        <p>ACTUEL</p>
+                    </div>
+                    <p>Et me voilà enfin au BUT MMI de Toulon. Au départ, j’avais surtout rejoins car je voulais faire de l’animation 2D, ce qu’on ne fait malheureusement pas, du moins, pas beaucoup. Au final, j’ai appris bien plus de choses que ce soit dans le design, le graphisme, le développement web ou l’UX/UI. Cette formation m’a vraiment appris les bases du monde numérique et je sais que je les utiliserais toujours quel que soit mon projet. Et ajourd’hui, je continue cette formation jusqu’au bout.</p>
+                </div>
+        </section>
+
+        <section id="section-favorite" class="hidden">
+                <h2 class="section-title"><img src="img/etoile-1.png" alt="Décoration étoile">Mes projets favoris</h2>
+                <div id="project-favorite">
+                    <a id="project-id-1" class="project-index" href="#">
+                        <div class="light">
+                            <img src="#" alt="Projet favoris 1">
+                            <small id="project-date-1">date</small>
+                        </div>
+                        <p id="project-name-1">nom</p>
+                    </a>
+                    <a id="project-id-2" class="project-index" href="#">
+                        <div class="light">
+                            <img src="#" alt="Projet favoris 2">
+                            <small id="project-date-2">date</small>
+                        </div>
+                        <p id="project-name-2">nom</p>
+                    </a>
+                    <a id="project-id-3" class="project-index" href="#">
+                        <div class="light">
+                            <img src="#" alt="Projet favoris 3">
+                            <small id="project-date-3">date</small>
+                        </div>
+                        <p id="project-name-3">nom</p>
+                    </a>
+                </div>
+        </section>
     </main>
+    <footer>
+        <div id="footer-links">
+            <a href="politique.html">Politique de confidentialité</a>
+            <a href="mentions.html">Mentions légales</a>
+        </div>
+        <small>©2026 Groux Océane. Tous droits réservés</small>
+        <div id="footer-social">
+            <a href="https://www.instagram.com/oceane.groux?igsh=aHR2M2k5cGdubWM1" target="_blank"><img src="img/lien-instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/oc%C3%A9ane-groux" target="_blank"><img src="img/lien-linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
 
     <!-- Animation chargement -->
     <div id="loading">
@@ -25,6 +103,7 @@
         <h2 id="loadingText"><span>C</span><span>h</span><span>a</span><span>r</span><span>g</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>.</span><span>.</span><span>.</span></h2>
     </div>
 
+    <!-- Animation fond -->
     <div id="wave">
         <span></span>
         <span></span>
@@ -39,6 +118,6 @@
         <span class="ball"></span>
     </div>
     <div class="stars"></div>
-<script src="JavaScript/loading.js"></script>
+<script src="JavaScript/animation.js"></script>
 </body>
 </html>
