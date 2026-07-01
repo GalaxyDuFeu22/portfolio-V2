@@ -74,6 +74,17 @@ body {
 
 
 /*------------------ GENERAL ------------------ */
+#top-arrow {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    opacity: 0.5;
+    transition: 0.4s;
+    transform: translateY(150%);
+}
+
 .light{
     border: solid var(--indigo-clair) 2px;
     box-shadow: 0 0 5px var(--indigo-clair);
@@ -157,6 +168,10 @@ footer {
         top: 1.5em;
         height: 100%;
         width: 300px;
+    }
+    footer small{
+        color: var(--indigo-fonce);
+        font-family: Trispace;
     }
     #footer-links {
         flex-direction: column;
