@@ -1,3 +1,5 @@
+const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
 const menu = document.getElementById("menu-phone");
 const openMenu = document.getElementById("nav");
 const layer = document.getElementById("black-layer");
@@ -26,12 +28,13 @@ layer.addEventListener("click", () => {
     school3.style.zIndex="-3";
 })
 
-openMenu.addEventListener("click", () => {
-    openMenu.style.top="200%";
-    layer.style.opacity="0";
-    layer.style.zIndex="-3";
-})
-
+if (isMobile) {
+    openMenu.addEventListener("click", () => {
+        openMenu.style.top = "200%";
+        layer.style.opacity = "0";
+        layer.style.zIndex = "-3";
+    });
+}
 blockSchool.forEach((block, index) => {
     block.addEventListener("click", () => {
         const school = block.dataset.school;
