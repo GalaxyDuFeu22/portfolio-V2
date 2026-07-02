@@ -1,4 +1,4 @@
-/*--- DEFAULT OPTIONS ---*/
+/*--------------- DEFAULT OPTIONS ---------------*/
 :root {
     --blanc : #FFFFFF;
     --indigo-clair : #E0DDEC;
@@ -6,6 +6,23 @@
     --indigo-fonce : #423086;
     --noir-clair : #303030;
     --indigo-noir : #1A1A1F;
+}
+/*--- FONTS ---*/
+@font-face {
+    font-family: Trispace;
+    src: url(../fonts/Trispace/Trispace-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Tomorrow;
+    src: url(../fonts/Tomorrow/Tomorrow-SemiBold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Tomorrow;
+    src: url(../fonts/Tomorrow/Tomorrow-Bold.ttf);
+    font-weight: 800;
 }
 
 * {
